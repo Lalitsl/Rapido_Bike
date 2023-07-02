@@ -1,0 +1,10 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.carpo1 {
+    writing-mode: vertical-rl;
+    background-color: rgb(249, 201, 53);	
+   transform: translateX(20px);
+
+}

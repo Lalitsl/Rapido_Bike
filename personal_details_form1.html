@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- ........  font awesome link  ............... -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="rapido.css">
+
+    <title>details.form</title>
+  </head>
+  <style>
+  body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*background: linear-gradient(135deg, orange 60%, cyan);*/
+    
+  }
+  /*.text11 a{
+    color:black;
+    margin-left: 20px;
+    font-size: 18px;
+  }*/
+.bbt1 {
+  text-align: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 30px;
+  padding:10px;
+  width: 100px;
+}
+.bbt1 a{
+  text-decoration: none; 
+  color: white; 
+}
+  </style>
+  <body>
+
+<!-- .......................  navbar section ............................. -->
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top text1">
+  <div class="container-fluid">
+    <a href="">
+        <img class="text10" src="rapido_image/rapido logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text11">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_careers.html">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_press.html">Press</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_contact.html">Contact us</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="rapido_carporate.html">Rapido Corporate</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rapido Calculator
+          </a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="rapido_car_game.html">Rapido Game</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_timer.html">Timer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_simple_js_calcu.html">Simple Calculator</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_bill.html">My Bill</a></li>
+          </ul>
+        </li>
+        <li><a href="rapido_rasistration.html"><button type="button" class="btn btn-dark btn1" style="margin-left:20px;">Registration</button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<!-- .....................  form  ................................................... -->
+<section class="container my-2 p-2"> 
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-6">
+      <form class="row g-3 p-3" name="f1" method="post" onsubmit="return validation();" action="rapido_location.html">
+<div class="col-md-6">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="name1" placeholder="Enter Frist name">
+    <span id="name01"></span>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="name2" placeholder="Enter Last name">
+    <span id="name02"></span>
+  </div>
+  <div class="col-md-6">
+    <label for="email1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="em1" placeholder="Enter Your Email">
+    <span id="email1"></span>
+  </div>
+  <div class="col-md-6">
+    <label for="mob" class="form-label">Mobile Number</label>
+    <input type="text" class="form-control" id="mob" name="mobile" placeholder="Enter Your Mobile Number">
+    <span id="mob1"></span>
+  </div>
+  <div class="col-12">
+    <label for="add" class="form-label">Address</label>
+    <input type="text" class="form-control" id="add" name="ad" placeholder="Enter Your Add">
+    <span  id="add1"></span>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom04" class="form-label" name="gen1">Gender</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="inputAddress" class="form-label">Date Of Birth</label>
+    <input type="Date" class="form-control" id="inputAddress" name="date1" required>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" name="city1">
+    <span id="city1"></span>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">State</label>
+    <input type="text" class="form-control" id="state" name="sta">
+    <span id="state1"></span>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-warning btn1" style="width:100px;">Submit</button>
+    <button type="submit" class="btn btn-dark bbt1"><a href="rapido_rasistration.html">Cancel</a></button>
+  </div>
+</form>
+    </div>
+    <div class="col-6">
+     <img src="rapido_image/rapidocarosal1.jpg" style="width: 100%;" height="450px">
+    </div>
+  </div>
+</section>
+    
+
+<!-- ........................ footer ............................ -->
+
+<div class="container-fluid text2  mb-0" style="background-color:#000">
+<div class="row">
+<div class="col-1"></div> 
+
+<div class="col-2">
+  <h6 class="pt-5">Customer app</h6>
+  <img src="rapido_image/app-store.png" style="height:100px" class="pt-3">
+</div>
+<div class="col-2">
+  <h6 class="pt-5">Captain app</h6>
+  <a href="http://www.google.com"><img src="rapido_image/google play store.png" style="height:50px" class="pt-3 text8"></a>
+</div>
+<div class="col-2 pt-5">
+  Home<br><br>
+About Us<br><br>
+Careers<br><br>
+Blog
+</div>
+<div class="col-2 pt-5">
+Privacy Policy<br><br>
+Customer Terms<br><br>
+Captain Terms<br><br>
+Press 
+</div>
+<div class="col-2 pt-5">
+  Follow Us
+<div class="cls1 text6"><br>
+<a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-white"></i></a>
+<a href="https://www.twitter.com"><i class="fa-brands fa-twitter text-white"></i></a>
+<a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+<a href="https://www.instagram.com"><i class="fa-brands fa-instagram text-white"></i></a>
+</div>
+</div>
+<div class="col-1"></div>
+</div><hr>
+<div class="text-center pt-3 pb-3">© 2022 Roppen Transportation. All rights reserved.</div> 
+</div>
+
+
+<script type="text/javascript">
+  function validation()
+  {
+    var mynm1=document.f1.name1.value;
+    var mynm2=document.f1.name2.value;
+    var myemail=document.f1.email.value;
+    var mymobile=document.f1.mob.value;
+    var myadd=document.f1.add.value;
+    var mycity=document.f1.city.value;
+    var mystate=document.f1.state.value;
+    var regEx = /^[a-zA-Z]{3,20}$/;
+    var regemail= /^[A-Za-z0-9_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,3}$/;
+    var regmobile= /^[789][0-9]{9}$/;
+    if(mynm1!=mynm1.match(regEx))
+    {
+          document.getElementById("name01").innerHTML=" ** Invalid Name";
+          document.getElementById("name01").style.color="red";
+          document.f1.name1.focus();
+          return false;
+
+    }
+    if(mynm1==mynm1.match(regEx))
+    {
+          document.getElementById("name01").innerHTML="valid";
+          document.getElementById("name01").style.color="green";
+
+    }    
+    if(mynm2!=mynm2.match(regEx))
+    {
+          document.getElementById("name02").innerHTML=" ** Invalid Name";
+          document.getElementById("name02").style.color="red";
+          document.f1.name2.focus();
+          return false;
+
+    }
+    if(mynm2==mynm2.match(regEx))
+    {
+          document.getElementById("name02").innerHTML="valid";
+          document.getElementById("name02").style.color="green";
+
+    }
+
+    if(myemail!=myemail.match(regemail))
+    {
+          document.getElementById("email1").innerHTML="** Invalid email";
+          document.getElementById("email1").style.color="red";
+          document.f1.email.focus();
+          return false;
+
+    }
+     if(myemail==myemail.match(regemail))
+    {
+          document.getElementById("email1").innerHTML=" Valid";
+          document.getElementById("email1").style.color="green";
+
+    }
+    
+
+     if(mymobile!=mymobile.match(regmobile))
+    {
+          document.getElementById("mob1").innerHTML="** Invalid mobile number";
+          document.getElementById("mob1").style.color="red";
+          document.f1.mob.focus();
+          return false;
+
+    }
+    if(mymobile==mymobile.match(regmobile))
+    {
+          document.getElementById("mob1").innerHTML=" valid mobile number";
+          document.getElementById("mob1").style.color="green";
+
+    }
+     if(myadd=="")
+    {
+          document.getElementById("add1").innerHTML="** Please Enter add.";
+           document.getElementById("add1").style.color="red";
+          document.f1.add.focus();
+          return false;
+    }
+    if(myadd!="")
+    {
+          document.getElementById("add1").innerHTML=" ";
+      
+    }
+     if(mycity!=mycity.match(regEx))
+    {
+          document.getElementById("city1").innerHTML=" ** Invalid City Name";
+          document.getElementById("city1").style.color="red";
+          document.f1.city.focus();
+          return false;
+
+    }
+    if(mycity==mycity.match(regEx))
+    {
+          document.getElementById("city1").innerHTML="valid";
+          document.getElementById("city1").style.color="green";
+
+    }  
+     if(mystate!=mystate.match(regEx))
+    {
+          document.getElementById("state1").innerHTML=" ** Invalid state Name";
+          document.getElementById("state1").style.color="red";
+          document.f1.state.focus();
+          return false;
+
+    }
+    if(mystate==mystate.match(regEx))
+    {
+          document.getElementById("state1").innerHTML="valid";
+          document.getElementById("state1").style.color="green";
+
+    }  
+    
+
+  }
+
+</script>
+
+
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>simple.js.calcu</title>
+
+
+  <!-- .... bootstrap link  ......... -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<!-- ........  font awesome link  ............... -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="rapido.css">
+
+<link rel="stylesheet" type="text/css" href="rapido_simple_js_calcu.css">
+</head>
+<body>
+
+
+
+<!-- .......................  navbar section ............................. -->
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top text1">
+  <div class="container-fluid">
+    <a href="">
+        <img class="text10" src="rapido_image/rapido logo.png"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text11">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_careers.html">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_blog.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_press.html">Press</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rapido_contact.html">Contact us</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="rapido_carporate.html">Rapido Corporate</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rapido Calculator
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="rapido_car_game.html">Rapido Game</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_timer.html">Timer</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_simple_js_calcu.html">Simple Calculator</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="rapido_bill.html">My Bill</a></li>
+          </ul>
+        </li>
+        <li><a href="rapido_rasistration.html"><button type="button" class="btn btn-dark btn1" style="margin-left:20px;">Registration</button></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+
+
+<center><section class="container1 body1" style="height:300px; width:300px; margin-top:80px; margin-bottom: 20px;">
+<div class="container" >
+      <form action="" name="calc" class="calculator">
+        <input type="text" class="value" readonly name="txt" />
+        <span class="num clear" onclick="calc.txt.value=''"><i>C</i></span>
+        <span class="num" onclick="calc.txt.value+='/'"><i>/</i></span>
+        <span class="num" onclick="calc.txt.value+='*'"><i>*</i></span>
+        <span class="num" onclick="calc.txt.value+='7'"><i>7</i></span>
+        <span class="num" onclick="calc.txt.value+='8'"><i>8</i></span>
+        <span class="num" onclick="calc.txt.value+='9'"><i>9</i></span>
+        <span class="num" onclick="calc.txt.value+='-'"><i>-</i></span>
+        <span class="num" onclick="calc.txt.value+='4'"><i>4</i></span>
+        <span class="num" onclick="calc.txt.value+='5'"><i>5</i></span>
+        <span class="num" onclick="calc.txt.value+='6'"><i>6</i></span>
+        <span class="num plus" onclick="calc.txt.value+='+'"><i>+</i></span>
+        <span class="num" onclick="calc.txt.value+='1'"><i>1</i></span>
+        <span class="num" onclick="calc.txt.value+='2'"><i>2</i></span>
+        <span class="num" onclick="calc.txt.value+='3'"><i>3</i></span>
+        <span class="num" onclick="calc.txt.value+='0'"><i>0</i></span>
+        <span class="num" onclick="calc.txt.value+='00'"><i>00</i></span>
+        <span class="num" onclick="calc.txt.value+='.'"><i>.</i></span>
+
+      <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+      </form>
+    </div>
+
+</section></center>
+
+
+
+
+<!-- ........................ footer ............................ -->
+<!-- <div class="container-fluid bg-danger"> -->
+<div class="container-fluid text2  mb-0" style="background-color:#000">
+<div class="row">
+<div class="col-1"></div> 
+
+<div class="col-2">
+  <h6 class="pt-5">Customer app</h6>
+  <img src="rapido_image/app-store.png" style="height:100px" class="pt-3">
+</div>
+<div class="col-2">
+  <h6 class="pt-5">Captain app</h6>
+  <a href="http://www.google.com"><img src="rapido_image/google play store.png" style="height:50px" class="pt-3 text8"></a>
+</div>
+<div class="col-2 pt-5">
+  Home<br><br>
+About Us<br><br>
+Careers<br><br>
+Blog
+</div>
+<div class="col-2 pt-5">
+Privacy Policy<br><br>
+Customer Terms<br><br>
+Captain Terms<br><br>
+Press 
+</div>
+<div class="col-2 pt-5">
+  Follow Us
+<div class="cls1 text6"><br>
+<a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-white"></i></a>
+<a href="https://www.twitter.com"><i class="fa-brands fa-twitter text-white"></i></a>
+<a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in text-white"></i></a>
+<a href="https://www.instagram.com"><i class="fa-brands fa-instagram text-white"></i></a>
+</div>
+</div>
+<div class="col-1"></div>
+</div><hr>
+<div class="text-center pt-3 pb-3">© 2022 Roppen Transportation. All rights reserved.</div> 
+</div>
+<!-- </div>
+ -->
+
+</body>
+</html>
